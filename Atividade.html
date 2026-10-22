@@ -7,7 +7,8 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #260b1f;
+      background-image: url('img/background_galaxy.png');
+      background-size: cover;
       color: #fff;
       margin: 0;
       padding: 20px;
@@ -33,13 +34,13 @@
     }
 
     .card {
-      background: #471a39;
+      background: #000000;
       border-radius: 10px;
       padding: 16px;
       text-align: center;
     }
 
-    .icone { width: 100px; height: 100px; }
+    .icone { width: 100px; height: 100px; object-fit: contain; }
     .preco { color: #ffd166; font-weight: bold; }
 
     button {
@@ -62,8 +63,26 @@
 
   <section class="grade">
 
-    <div class="card" id="produto-1" data-preco="80000">
-      <img class="icone" src="imagens/marte.svg" alt="Marte">
+    <div class="card" id="produto-1" data-preco="40000">
+      <img class="icone" src="img/lua.png" alt="Lua">
+      <h2>Lua</h2>
+      <p class="preco">R$ 40.000,00</p>
+      <p>Quantidade: 0</p>
+      <button class="adicionar">Adicionar</button>
+      <button class="remover">Remover</button>
+    </div>
+
+    <div class="card" id="produto-2" data-preco="50000">
+      <img class="icone" src="img/mercurio.png" alt="Mercúrio">
+      <h2>Mercúrio</h2>
+      <p class="preco">R$ 50.000,00</p>
+      <p>Quantidade: 0</p>
+      <button class="adicionar">Adicionar</button>
+      <button class="remover">Remover</button>
+    </div>
+
+    <div class="card" id="produto-3" data-preco="80000">
+      <img class="icone" src="img/marte.png" alt="Marte">
       <h2>Marte</h2>
       <p class="preco">R$ 80.000,00</p>
       <p>Quantidade: 0</p>
@@ -71,8 +90,17 @@
       <button class="remover">Remover</button>
     </div>
 
-    <div class="card" id="produto-2" data-preco="500000">
-      <img class="icone" src="imagens/terra.svg" alt="Terra">
+    <div class="card" id="produto-4" data-preco="120000">
+      <img class="icone" src="img/venus.png" alt="Vênus">
+      <h2>Vênus</h2>
+      <p class="preco">R$ 120.000,00</p>
+      <p>Quantidade: 0</p>
+      <button class="adicionar">Adicionar</button>
+      <button class="remover">Remover</button>
+    </div>
+
+    <div class="card" id="produto-5" data-preco="500000">
+      <img class="icone" src="img/terra.png" alt="Terra">
       <h2>Terra</h2>
       <p class="preco">R$ 500.000,00</p>
       <p>Quantidade: 0</p>
@@ -80,8 +108,17 @@
       <button class="remover">Remover</button>
     </div>
 
-    <div class="card" id="produto-3" data-preco="750000">
-      <img class="icone" src="imagens/saturno.svg" alt="Saturno">
+    <div class="card" id="produto-6" data-preco="600000">
+      <img class="icone" src="img/urano.png" alt="Urano">
+      <h2>Urano</h2>
+      <p class="preco">R$ 600.000,00</p>
+      <p>Quantidade: 0</p>
+      <button class="adicionar">Adicionar</button>
+      <button class="remover">Remover</button>
+    </div>
+
+    <div class="card" id="produto-7" data-preco="750000">
+      <img class="icone" src="img/saturno.png" alt="Saturno">
       <h2>Saturno</h2>
       <p class="preco">R$ 750.000,00</p>
       <p>Quantidade: 0</p>
@@ -89,17 +126,8 @@
       <button class="remover">Remover</button>
     </div>
 
-    <div class="card" id="produto-4" data-preco="900000">
-      <img class="icone" src="imagens/jupiter.svg" alt="Júpiter">
-      <h2>Júpiter</h2>
-      <p class="preco">R$ 900.000,00</p>
-      <p>Quantidade: 0</p>
-      <button class="adicionar">Adicionar</button>
-      <button class="remover">Remover</button>
-    </div>
-
-    <div class="card" id="produto-5" data-preco="950000">
-      <img class="icone" src="imagens/andromeda.svg" alt="Galáxia de Andrômeda">
+    <div class="card" id="produto-8" data-preco="950000">
+      <img class="icone" src="img/andromeda.png" alt="Galáxia de Andrômeda">
       <h2>Galáxia de Andrômeda</h2>
       <p class="preco">R$ 950.000,00</p>
       <p>Quantidade: 0</p>
@@ -107,14 +135,25 @@
       <button class="remover">Remover</button>
     </div>
 
-    <div class="card" id="produto-6" data-preco="1000000">
-      <img class="icone" src="imagens/via-lactea.svg" alt="Via Láctea">
-      <h2>Via Láctea</h2>
-      <p class="preco">R$ 1.000.000,00</p>
+    <div class="card" id="produto-9" data-preco="950000">
+      <img class="icone" src="img/nave_interestelar.png" alt="Nave Interestelar">
+      <h2>Nave Interestelar</h2>
+      <p class="preco">R$ 950.000,00</p>
       <p>Quantidade: 0</p>
       <button class="adicionar">Adicionar</button>
       <button class="remover">Remover</button>
     </div>
+
+    <div class="card" id="produto-10" data-preco="950000">
+      <img class="icone" src="img/plutao.png" alt="Plutão">
+      <h2>Plutão</h2>
+      <p class="preco">R$ 950.000,00</p>
+      <p>Quantidade: 0</p>
+      <button class="adicionar">Adicionar</button>
+      <button class="remover">Remover</button>
+    </div>
+
+    
 
   </section>
 
